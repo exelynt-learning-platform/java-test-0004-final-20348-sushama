@@ -1,7 +1,10 @@
 public class Main {
+
+    private static final int BASE = 4;
+
     public static void main(String[] args) {
-        int n = 4;
-        int size = 2 * n - 1;
+
+        int size = 2 * BASE - 1;
 
         for(int i = 0; i < size; i++) {
             for(int j = 0; j < size; j++) {
@@ -13,7 +16,7 @@ public class Main {
 
                 int min = Math.min(Math.min(top, bottom), Math.min(left, right));
 
-                System.out.print(n - min + " ");
+                System.out.print(BASE - min + " ");
             }
             System.out.println();
         }
